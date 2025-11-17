@@ -4,6 +4,7 @@ import facebookIcon from '../public/FACEBOOK.png'
 import githubIcon from '../public/GITHUB.png'
 import instagramIcon from '../public/INSTAGRAM.png'
 import whatsappIcon from '../public/WHATSAPP.webp'
+import mqueens4 from '/mqueen.png'
 
 import cssIMG from'/css.png'
 import htmlIMG from '/html.png'
@@ -11,8 +12,33 @@ import JSimg from '/JS.webp'
 import reactIMG from '/react.png'
 import vercelIMG from '/VERCEL.png'
 import viteIMG from '/VITE.png'
+import { useState } from 'react'
 
 function App() {
+
+  const defaultPhoneNumber = '5541999999999'
+  const [formData, setFormData] = useState({
+    name:'',
+    email:'',
+    message:''
+  })
+
+  const handleChange = (event) => {
+    const{name, value} = event.target
+    setFormData({...formData, [name]: value})
+  }
+
+  const handleZap = (event) => {
+    const {name, email, message} = formData
+
+    const urlZap = `https://api.whatsapp.com/send?phone=${defaultPhoneNumber}&text=
+    Nome:%20${name}%0D%0A
+    Email:%20${email}%0D%0A
+    Menagem:%20${message}%0D%0A`
+
+    window.open(urlZap, "_blank")
+  }
+
 
   return (
     <>
@@ -80,8 +106,25 @@ function App() {
           <h2>sessao 3</h2>
         </section>
 
-        <section id="s4">
-          <h2>sessao 4</h2>
+        <section id='s5' className={styles.s5}>
+          <div className={styles.cardDoMcqueen}>
+            <h2>ssss</h2>
+            <img height={300} src={mqueens4} alt='anthony'/>
+          </div>
+        </section>
+
+        <section id="s4" className={styles.s4}>
+          <h2>CONTATO</h2>
+          <div className={styles.formData}>
+            <label htmlFor='name'>informe seu nome</label>
+            <input type='text' id='name' name='name' value={formData.name} onChange={handleChange} required/>
+            <label htmlFor='email'>informe seu email</label>
+            <input type='email' id='email' name='email' value={formData.email} onChange={handleChange} required/>
+            <label htmlFor='message'>informe uma mensagem</label>
+            <textarea name='message' id='message' value={formData.message} onChange={handleChange} cols={30} rows={10} required></textarea>
+            <button onClick={handleZap}>Enviar mensagem</button>
+            
+          </div>
         </section>
       </main>
       <footer className={styles.rodape}>
