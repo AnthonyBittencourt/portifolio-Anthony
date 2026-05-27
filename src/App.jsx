@@ -56,7 +56,7 @@ function App() {
             <img className={styles.imgPerfil} src={fotoPerfil} alt="Foto perfil" />
           </div>
           <div className={styles.right}>
-            <h2 className={styles.title}>Anthony Bittencorut</h2>
+            <h2 className={styles.title}>Anthony Bittencourt</h2>
             <p className={styles.paragraph}>Desenvolvedor intermediario, com habilidades em linguagens C, Python, JavaScript, CSS e HTML. Atualmente cursando Tecnico em Analise e Desenvolvimento de Sistemas</p>
           </div>
         </section>
