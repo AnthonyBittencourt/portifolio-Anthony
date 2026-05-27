@@ -3,6 +3,7 @@ import facebookIcon from '/facebook.webp'
 import instagramIcon from '/instagram.webp'
 import linkedinIcon from '/github.png'
 import whatsappIcon from '/whatsapp.webp'
+import fotoPerfil from '/fotoperfil.jpg'
 
 import { useState, useEffect } from 'react'
 import { Card } from './components/card'
@@ -18,7 +19,7 @@ function App() {
         })
   }, [])
 
-  const defaultPhoneNumber = '5541999999999'
+  const defaultPhoneNumber = '5541995623019'
 
   const [formData, setFormData] = useState({
     name: '',
@@ -47,13 +48,12 @@ function App() {
       <nav className={styles.menu}>
         <a href="#s1">Home</a>
         <a href="#s2">Cards</a>
-        <a href="#s3">Video</a>
         <a href="#s4">Contato</a>
       </nav>
       <main>
         <section className={styles.s1} id='s1'>
           <div className={styles.left}>
-            <img className='' src='' alt="Foto perfil" />
+            <img className={styles.imgPerfil} src={fotoPerfil} alt="Foto perfil" />
           </div>
           <div className={styles.right}>
             <h2 className={styles.title}>Anthony Bittencorut</h2>
@@ -90,9 +90,9 @@ function App() {
       </main>
       <footer className={styles.rodape}>
         <a href="https://www.facebook.com" target='_blank' rel='noopener noreferrer'> <img width={70} src={facebookIcon} alt="Facebook" /> </a>
-        <a href="https://www.instagram.com" target='_blank' rel='noopener noreferrer'> <img width={70} src={instagramIcon} alt="Instagram" /> </a>
+        <a href="https://www.instagram.com/_anthwny/" target='_blank' rel='noopener noreferrer'> <img width={70} src={instagramIcon} alt="Instagram" /> </a>
         <a href="https://github.com/AnthonyBittencourt" target='_blank' rel='noopener noreferrer'> <img width={45} src={linkedinIcon} alt="Linkedin" /> </a>
-        <a href="https://www.whatsapp.com" target='_blank' rel='noopener noreferrer'> <img width={70} src={whatsappIcon} alt="WhatsApp" /> </a>
+        <a href="https://w.app/owrjsg" target='_blank' rel='noopener noreferrer'> <img width={70} src={whatsappIcon} alt="WhatsApp" /> </a>
       </footer>
     </>
   )
