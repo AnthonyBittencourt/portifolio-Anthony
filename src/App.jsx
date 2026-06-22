@@ -57,7 +57,9 @@ function App() {
           </div>
           <div className={styles.right}>
             <h2 className={styles.title}>Anthony Bittencourt</h2>
-            <p className={styles.paragraph}>Desenvolvedor intermediario, com habilidades em linguagens C, Python, JavaScript, CSS e HTML. Atualmente cursando Tecnico em Analise e Desenvolvimento de Sistemas</p>
+            <p className={styles.paragraph}>Desenvolvedor intermediario, com habilidades em linguagens C, Python, JavaScript, CSS e HTML. Atualmente cursando:</p>
+            <p className={styles.paragraph}> Analise e Desenvolvimento de Sistemas 2/3</p>
+            <p className={styles.paragraph}>Estatística e Ciência de Dados 1/8</p>
           </div>
         </section>
 
