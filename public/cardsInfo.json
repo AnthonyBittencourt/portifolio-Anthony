@@ -34,5 +34,53 @@
         "imagem": "/VERCEL.png",
         "tecnologia": "VERCEL",
         "texto": "Vercel é uma plataforma de nuvem que facilita a criação e implantação de aplicativos web modernos, sendo ideal para desenvolvedores front-end."
-    }
+    },
+{
+    "id": "7",
+    "imagem": "/typescript.png",
+    "tecnologia": "TYPESCRIPT",
+    "texto": "TypeScript é uma linguagem baseada em JavaScript que adiciona tipagem estática, tornando o desenvolvimento mais seguro, organizado e escalável."
+},
+{
+    "id": "8",
+    "imagem": "/node.svg",
+    "tecnologia": "NODE.JS",
+    "texto": "Node.js é um ambiente de execução JavaScript que permite desenvolver aplicações rápidas e escaláveis no lado do servidor."
+},
+{
+    "id": "9",
+    "imagem": "/nestjs.svg",
+    "tecnologia": "NESTJS",
+    "texto": "NestJS é um framework para Node.js que utiliza TypeScript e uma arquitetura modular para criar APIs e aplicações backend robustas."
+},
+{
+    "id": "10",
+    "imagem": "/nextjs.png",
+    "tecnologia": "NEXT.JS",
+    "texto": "Next.js é um framework React que facilita a criação de aplicações web modernas com renderização otimizada, roteamento e alto desempenho."
+},
+{
+    "id": "11",
+    "imagem": "/python.png",
+    "tecnologia": "PYTHON",
+    "texto": "Python é uma linguagem de programação versátil e de sintaxe simples, amplamente utilizada em desenvolvimento web, automação, ciência de dados e inteligência artificial."
+},
+{
+    "id": "12",
+    "imagem": "/C.png",
+    "tecnologia": "C",
+    "texto": "C é uma linguagem de programação de alto desempenho, muito utilizada no desenvolvimento de sistemas, softwares embarcados e aplicações de baixo nível."
+},
+{
+    "id": "13",
+    "imagem": "/SQL.png",
+    "tecnologia": "SQL",
+    "texto": "SQL é a linguagem padrão para criação, consulta e gerenciamento de bancos de dados relacionais, sendo essencial para manipulação de dados."
+},
+{
+    "id": "14",
+    "imagem": "/postman.png",
+    "tecnologia": "POSTMAN",
+    "texto": "Postman é uma ferramenta utilizada para testar, documentar e integrar APIs, facilitando o desenvolvimento e a validação de serviços web."
+}
 ]
